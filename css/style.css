@@ -1,0 +1,521 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+@font-face {
+  font-family: OpenSansExtrabold;
+  src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+
+.clear{
+	clear: both;
+}
+
+
+header{
+	border-top: 5px solid #d00b01;
+	padding: 36px 0 40px;
+	margin: 56px 0 0 0;
+}
+
+.logo{
+	width: 276px;
+	margin: 0 auto;
+}
+
+.social-icon{
+	float: none;
+	width: 168px;
+	margin: 10px auto;
+}
+
+
+.social-icon ul li{
+	display: inline-block;
+}
+
+.social-icon ul li a{
+	height: 30px;
+	width: 30px;
+	background-color: #d1d1d1;
+	display: block;
+	text-align: center;
+	padding-top:7px ;
+	font-size: 18px;
+	color: #ffffff;
+	border-radius: 100%;
+}
+
+.menu-bg{
+	background-color: #ffffff;
+
+}
+.social-icon ul li a:hover{
+	background-color: #d00b01;
+}
+
+.navbar-nav li a{
+	color: #313131;
+	font-family: 'OpenSansExtrabold';
+	
+}
+
+.navbar-nav li a.m-active{
+	color: #d00b01;
+}
+
+.navbar-nav li a:hover{
+	color: #c5c5c5;
+}
+
+section{
+	margin: 0 0 70px 0;
+}
+
+
+.planing-item{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.planing-item .icon{
+	height: 70px;
+	width: 70px;
+	background-color: #d1d1d1;
+	margin: 0 auto 20px;
+	border-radius: 100%;
+	font-size: 36px;
+	color: #313131;
+}
+
+.planing-item .icon i{
+	padding-top: 17px;
+}
+
+.planing-item .icon:hover{
+	background-color: #d00b01;
+	color: #ffffff;
+}
+
+h2.title{
+	font-family: 'OpenSansExtrabold';
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	font-size: 20px;
+}
+
+p{
+	font-family: 'Arial';
+	font-size: 12px;
+	line-height: 16px;
+	text-align: justify;
+}
+
+.slogan-content{
+	text-align: center;
+	padding: 40px 0;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+}
+
+.slogan .slogan-content h2.sub-title{
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+.slogan .slogan-content h1.big-title{
+	font-size: 30px;
+}
+.border-slo{
+	height: 1px;
+	background: rgb(246,246,246);
+	background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(207,207,207,1) 50%, rgba(246,246,246,1) 100%);
+}
+
+.feature-item{
+	position: relative;
+	margin: 0px 0px 20px 0;
+}
+
+
+.caption{
+	font-size: 50px;
+	position: absolute;
+	top: 85px;
+	left: 110px;
+	color: #313131;
+	display: none;
+}
+.feature-item:hover .caption{
+	display: block;
+}
+
+
+.about{
+	text-align: justify;
+}
+
+.about ul li{
+	font-size: 12px;
+	padding: 0 0 8px 18px;
+	position: relative;
+}
+
+.about ul li:first-child{
+	padding-top: 8px;
+}
+
+.about ul li i{
+	position: absolute;
+	left: 0px;
+}
+
+.read-more{
+	color: #d00b01;
+	font-style: italic;
+	text-decoration: none;
+}
+
+
+.lnews-item .date{
+	height: 70px;
+	width: 70px;
+	background-color: #d1d1d1;
+	border-radius: 100%;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-size: 12px;
+	padding-top: 20px;
+	margin: 0 12px 0 0;
+
+}
+
+.lnews-item .date span{
+	font-size: 17px;
+}
+
+h3.title{
+	font-family: 'Open Sans';
+	font-size: 17px;
+	color: #d00b01;
+	padding-bottom: 16px;
+	
+}
+
+.author, .author a{
+	font-family: 'arial';
+	font-size: 12px;
+	font-style: italic;
+	color: #9d9d9d;
+	text-decoration: none;
+	padding-bottom: 10px;
+}
+.post-image img{
+	height: 230px;
+}
+.post-item h3.title{
+	text-transform: uppercase;
+	margin: 20px 0 0 0;	
+}
+.post-item .title a{
+	text-decoration: none;
+	color: #d00b01;
+}
+.post-item .title a:hover{
+	color: #484848;
+}
+.post-item .author a.name:hover{
+	color: #d00b01;
+}
+.post-item p a{
+	color: #d00b01;
+	text-decoration: none;
+}
+.post-item p a:hover{
+	color: #1e1e1e;
+}
+.section-border{
+	height: 2px;
+	width: 100%; 
+	background: #1e1e1e;
+}
+section.castom{
+	margin-bottom: 40px;
+}
+.tweets-item P i{
+	width: 25px;
+	font-size: 20px;
+	float: left;
+	padding-top: 5px;
+	color: #d00b01;
+}
+.p-border{
+	padding-top: 17px;
+	border-top: 2px solid #eaeaea;
+	border-bottom: 2px solid #eaeaea;
+	margin-bottom: 17px;
+}
+.tweets-item p{
+	padding-bottom: 15px;
+}
+.tweets-item p a{
+	color: #d00b01;
+	text-decoration: none;
+}
+
+input{
+	padding-left: 10px;
+	width: 100%;
+	font-style: italic;
+	margin-bottom: 5px;
+	height: 28px;
+	border: none;
+	border-radius:2px;
+	background-color: #d1d1d1;
+
+}
+input.message{
+	padding-bottom: 108px;
+	padding-top: 7px;
+}
+
+button.clear-from{
+	border: none;
+	height: 28px;
+	font-family: 'Open Sans';
+	font-size: 11px;
+	background-color: #313131;
+	color: #ffffff;
+	font-family:'OpenSansExtrabold';
+}
+button.send{
+	font-family: 'OpenSansExtrabold';
+	height: 28px;
+	width: 54px;
+	font-size: 11px;
+	border: none;
+	background-color: #d00b01;
+	color: #ffffff;
+}
+
+.testimonials .tweets-item .p-border{
+	border-bottom: none;
+}
+.soumik{
+	border-top: 2px solid #d1d1d1;
+	padding-top: 10px;
+}
+.testimonials-color{
+	color: #d00b01;
+}
+.flickr{
+	padding: 3px;
+}
+footer{
+	background-color:#1e1e1e;	
+}
+footer{
+	padding: 36px 0 40px;
+	margin: 56px 0 0 0;
+}
+footer .logo{
+	color: #1e1e1e;
+}
+.flickr:hover{
+	transition: transform .6s;
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.5); 
+}
+.center{	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+@media only screen and (min-width: 768px) {
+	.logo{
+		margin: 0;
+	}
+	.social-icon{
+		margin: 0;
+		float: right;
+		
+	}
+	.header{
+		margin: 48px 0 0 0;
+	}
+}
+
+/*About us*/
+.about-title{
+	text-align: center;
+}
+.about-item h2{
+	font-size: 25px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+.about-title h2{
+	font-size: 25px;
+	padding-bottom: 10px;
+	
+}
+
+.about-item p{
+	padding-bottom: 10px;
+	font-size: 15px;
+}
+/*end*/
+/*features*/
+.main-features .title{
+	text-align: center;
+}
+.sub-title h2{
+	font-size: 20px;
+	padding: 10px 10px;
+	font-weight: bold;
+}
+.main-features p{
+	font-size: 15px;
+}
+.creative-section h2.title{
+	text-align: center;
+	font-size: 30px;
+}
+.creative-section h3{
+	text-align: center;
+}
+.metting{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #d00b01;
+	color: #ffffff;
+	border-radius: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	height: 40px;
+	width: 20%;
+	
+}
+/*end*/
+/*Portfolio*/
+.port{
+	background: #e5e6ea;
+	border-radius: 20px;
+}
+
+
+.left{
+	padding-top: 60px;
+	
+	margin-left: 200px;
+}
+.right{
+	
+	
+	
+	margin-right: 200px;
+}
+h2.main-title{
+	font-size: 50px;
+	font-family: Garamond, serif;
+	font-weight: bolder;
+}
+h2.color{
+	font-size: 50px;
+	font-family: Garamond, serif;
+	font-weight: bolder;
+	color:  #154de8;
+}
+.left-sub{
+	font-size: 15px;
+	padding-top: 10px;
+}
+.Suscribe{
+	
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	background: #154de8;
+	color: #ffffff;
+	width: 100px;
+}
+.cont-email{
+	height: 50px;
+	border-radius: 10px;
+}
+.contact-item{
+	padding-top: 10px;
+}
+.left .social-icon{
+	float: none;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+/*blog section*/
+
+.feature-item a{
+	text-decoration: none;
+}
+/*contacts*/
+.sub-title-contact{
+	font-size: 25px;
+}
+.main-section p{
+	text-align: center;
+}
+.main-section{
+	text-align: center;
+}
