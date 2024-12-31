@@ -519,3 +519,12 @@ h2.color{
 .main-section{
 	text-align: center;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.left{
+		padding-top: 60px;
+		
+		margin-left: 70px;
+	}
+}
